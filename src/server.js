@@ -3,6 +3,8 @@ const bodyParser = require('koa-bodyparser')
 const path = require('path')
 const serve = require('koa-static');
 const logger = require('koa-logger')
+require('@babel/register');
+require('@babel/polyfill');
 
 const app = new Koa()
 app.use(bodyParser())
@@ -16,4 +18,4 @@ app.listen(3000,function(){
     console.log('server is running at 3000');
 });
 
-export default app;
+// export default app;
