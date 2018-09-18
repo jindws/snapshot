@@ -13,8 +13,6 @@ app.use(serve('.'));
 const router = require('./routes')
 app.use(router.routes(),router.allowedMethods())
 
-app.listen(3000,function(){
-    console.log('server is running at 3000');
-});
-// export default app;
+app.listen(3000);
+
 module.export = app
