@@ -12,11 +12,15 @@ export default class App extends Component {
     }
 
     _submit(){
+        this.setState({
+            errorMsg:'loading...',
+        })
         DB.Create.link({
             link:this.link.value,
         }).then(data=>{
             this.setState({
                 link:data.url,
+                errorMsg:'',
             })
         },({errorMsg})=>{
             this.setState({
