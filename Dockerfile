@@ -10,4 +10,4 @@
  # 容器对外暴露的端口号
  EXPOSE 3000
 
- CMD ["node","src/src/index.js"]
+ CMD ["node","src/index.js"]
