@@ -7,7 +7,7 @@
     "start": "nodemon",
     "nodes": "node dist",
     "build:app": "webpack --mode production --progress",
-    "build:node": "webpack --mode production --progress --config webpack.node.js",
+    "build:node": "webpack --mode production --progress --config webpack.node.js --watch",
     "build": "webpack --mode production --progress&&webpack --mode production --progress --config webpack.node.js"
   },
   "author": "",

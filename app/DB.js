@@ -1,4 +1,4 @@
-import DBF from 'dbfac'
+const DBF =require('dbfac')
 
 export default DBF;
 

@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import DB from './DB'
+const React = require('react')
+const DB = require('./DB')
 
-export default class App extends Component {
+class App extends React.Component {
 
     constructor(){
         super()
