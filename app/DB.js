@@ -1,6 +1,6 @@
 const DBF =require('dbfac')
 
-export default DBF;
+module.exports = DBF
 
 DBF.create('Create', {
     link: {

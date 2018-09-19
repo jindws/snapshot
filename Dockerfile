@@ -1,7 +1,7 @@
  FROM node:10.10.0
 
  ADD . /
- #RUN cd /src;npm i yarn -g;yarn;yarn build
+ #RUN cd /;npm i yarn -g;yarn;yarn build
 
  RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
  RUN cd /;cnpm i;cnpm run build
