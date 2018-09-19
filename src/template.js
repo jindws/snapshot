@@ -1,4 +1,4 @@
-export default ({ body, title }) => {
+module.exports =  ({ body, title }) => {
     return `<!DOCTYPE html>
       <html>
         <head>
@@ -10,8 +10,8 @@ export default ({ body, title }) => {
 
         <body>
           <div id="root">${body}</div>
-          <script type="text/javascript" src="../css.js" charset="utf-8"></script>
-          <script type="text/javascript" src="../app.js" charset="utf-8"></script>
+          <script type="text/javascript" src="../dist/css.js" charset="utf-8"></script>
+          <script type="text/javascript" src="../dist/app.js" charset="utf-8"></script>
         </body>
       </html>`
 };

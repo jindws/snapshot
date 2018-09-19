@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon",
-    "webpack": "webpack --mode production --progress"
+    "nodes": "node dist",
+    "build:app": "webpack --mode production --progress",
+    "build:node": "webpack --mode production --progress --config webpack.node.js",
+    "build": "webpack --mode production --progress&&webpack --mode production --progress --config webpack.node.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/runtime": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
     "autoprefixer": "^9.1.5",
     "cssnano": "^4.1.0",
     "koa": "^2.5.3",

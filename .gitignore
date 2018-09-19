@@ -2,3 +2,5 @@ node_modules
 yarn.lock
 app.js
 css.css
+/dist
+yarn-error.log

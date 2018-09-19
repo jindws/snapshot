@@ -61,3 +61,4 @@ export default class App extends Component {
         ]
     }
 }
+module.exports = App

@@ -19,11 +19,11 @@ const Index = async (ctx) =>{
     }
 }
 
-const capture = async (link)=>{
+const capture = (link)=>{
     return new Promise(resolve=>{
         webCapture(link, {
             whiteBackground:false,
-        }, async(err, path) => {
+        }, (err, path) => {
             resolve(path[0])
         });
     })

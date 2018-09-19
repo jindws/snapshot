@@ -5,11 +5,11 @@ const webpack = require("webpack");
 module.exports = {
     entry: {
         app: `./app/browser.js`, //需要打包的文件
-        css:'./app/css.scss'
+        css:'./app/css.scss',
     },
     target: 'node',
     output: {
-        path: path.resolve(__dirname),
+        path: path.resolve(__dirname+'/dist'),
         // filename: (entry)=>{
         //     if(entry.chunk.name === 'app'){
         //         return `${entry.chunk.name}.js`

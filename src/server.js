@@ -4,7 +4,6 @@ const path = require('path')
 const serve = require('koa-static');
 const logger = require('koa-logger')
 
-
 const app = new Koa()
 app.use(bodyParser())
 app.use(logger())
@@ -15,4 +14,4 @@ app.use(router.routes(),router.allowedMethods())
 
 app.listen(3000);
 
-module.export = app
+module.exports = app
