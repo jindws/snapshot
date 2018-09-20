@@ -69,12 +69,12 @@ a {
     div {
         position: fixed;
         top: 30%;
-        left: 45%;
-        width: 10%;
         background-color: #ccc;
         color: #000;
         text-align: center;
         line-height: 50px;
+        left: calc(50% - 60px);
+        width: 120px;
 
         span {
             display: block;
