@@ -1,4 +1,4 @@
- FROM node:10.10.0
+ FROM node:10.11
 
  ADD . /
  #RUN cd /;npm i yarn -g;yarn;yarn build
